@@ -24,17 +24,17 @@ cd api_final_yatube
 Cоздать и активировать виртуальное окружение:
 
 ```
-python3 -m venv env
+python -m venv venv
 ```
 
 ```
-source env/bin/activate
+source venv/Scripts/activate
 ```
 
 Установить зависимости из файла requirements.txt:
 
 ```
-python3 -m pip install --upgrade pip
+python -m pip install --upgrade pip
 ```
 
 ```
@@ -44,19 +44,19 @@ pip install -r requirements.txt
 Выполнить миграции:
 
 ```
-python3 manage.py migrate
+python manage.py migrate
 ```
 
 Запустить проект:
 
 ```
-python3 manage.py runserver
+python manage.py runserver
 ```
 
 ### Создание суперпользователя
 Выполнить команду и следовать инструкциям:
 ```
-python3 manage.py createsuperuser
+python manage.py createsuperuser
 ```
 После создания супепользователя можно использовать данные учетной записи для страницы администрирования - http://127.0.0.1:8000/admin/
 
@@ -198,8 +198,3 @@ Response:
     "following": "string"
 }
 ```
-
-
-## Автор
-
-Лилия Альмухаметова
